@@ -46,12 +46,3 @@ use App\Libraries\View\ViewName;
         return $renderer->setData($data, 'raw')->render($name, $options, $saveData);
     }
 }
-
-if (! function_exists('layouts')) {
-  function layouts( string $name ): string
-  {
-    // $layout = (View::class)->layout;
-    // $layout = $layout('layouts/'.$name);
-    return $name;
-  }
-}
