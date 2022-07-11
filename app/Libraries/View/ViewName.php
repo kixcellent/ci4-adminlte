@@ -15,11 +15,11 @@ class ViewName
         $delimiter = ViewFinderInterface::HINT_PATH_DELIMITER;
 
         if (strpos($name, $delimiter) === false) {
-            return str_replace('/', '.', $name);
+            return str_replace('.', '/', $name);
         }
 
         [$namespace, $name] = explode($delimiter, $name);
 
-        return $namespace.$delimiter.str_replace('/', '.', $name);
+        return $namespace.$delimiter.str_replace('.', '/', $name);
     }
 }

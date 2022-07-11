@@ -1,6 +1,7 @@
 <?php
 
 use App\Libraries\View\ViewName;
+// use CodeIgniter\Config\Services;
 
 /**
  * The goal of this file is to allow developers a location
@@ -33,7 +34,7 @@ use App\Libraries\View\ViewName;
         /**
          * @var CodeIgniter\View\View $renderer
          */
-        $renderer = Services::renderer();
+        $renderer = service('renderer');
 
         $saveData = config(View::class)->saveData;
 
@@ -41,7 +42,7 @@ use App\Libraries\View\ViewName;
             $saveData = (bool) $options['saveData'];
             unset($options['saveData']);
         }
-        $view = ViewName::normalize($view);
+        $name = ViewName::normalize($name);
         return $renderer->setData($data, 'raw')->render($name, $options, $saveData);
     }
 }
