@@ -13,8 +13,9 @@ class Test extends BaseController
 
         // $db = db_connect();
         // $data = $db->getForeignKeyData('users');
-        $userModel = model(UserModel::class);
-        $data = $userModel->find();
+        // $userModel = model(UserModel::class);
+        // $data = $userModel->find();
+        $data = auth()->user()->identities;
         
         echo "<pre>";
         print_r($data);

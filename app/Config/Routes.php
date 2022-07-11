@@ -54,4 +54,7 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 
+// CodeIgniter4 Shield Routes
+service('auth')->routes($routes);
+// service('auth')->routes($routes, ['except' => ['login', 'register']]);
 // $routes->get('/test', 'Test::index');

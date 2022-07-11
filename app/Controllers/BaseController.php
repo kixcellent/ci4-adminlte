@@ -35,13 +35,17 @@ abstract class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = ['auth', 'html', 'form', 'inflector', 'number'];
+    protected $helpers = ['html', 'form', 'inflector', 'number'];
+
+    protected $session;
 
     /**
      * Constructor.
      */
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
+        $this->helpers = array_merge($this->helpers, ['auth', 'setting']);
+
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
 
