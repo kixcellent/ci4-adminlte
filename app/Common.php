@@ -1,6 +1,5 @@
 <?php
 
-use CodeIgniter\View\View;
 use App\Libraries\View\ViewName;
 // use CodeIgniter\Config\Services;
 
@@ -51,8 +50,8 @@ use App\Libraries\View\ViewName;
 if (! function_exists('layouts')) {
   function layouts( string $name ): string
   {
-    $layout = (View::class)->layout;
-    $layout = $layout('layouts/'.$name)
-    return ;
+    // $layout = (View::class)->layout;
+    // $layout = $layout('layouts/'.$name);
+    return $name;
   }
 }
