@@ -1,4 +1,4 @@
-<?= $this->extend('layouts/master') ?>
+<?= layouts('default') ?>
 
 <?= $this->section('content') ?>
     <h1>Welcome Back!</h1>

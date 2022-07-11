@@ -1,5 +1,6 @@
 <?php
 
+use CodeIgniter\View\View;
 use App\Libraries\View\ViewName;
 // use CodeIgniter\Config\Services;
 
@@ -45,4 +46,13 @@ use App\Libraries\View\ViewName;
         $name = ViewName::normalize($name);
         return $renderer->setData($data, 'raw')->render($name, $options, $saveData);
     }
+}
+
+if (! function_exists('layouts')) {
+  function layouts( string $name ): string
+  {
+    $layout = (View::class)->layout;
+    $layout = $layout('layouts/'.$name)
+    return ;
+  }
 }
