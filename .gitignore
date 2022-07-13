@@ -125,3 +125,8 @@ nb-configuration.xml
 /phpunit*.xml
 /.phpunit.*.cache
 
+#-------------------------
+# Public Assets
+#-------------------------
+public/assets/adminlte/
+public/assets/plugins/
