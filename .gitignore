@@ -129,4 +129,5 @@ nb-configuration.xml
 # Public Assets
 #-------------------------
 public/assets/adminlte/
+public/assets/bootstrap/
 public/assets/plugins/
