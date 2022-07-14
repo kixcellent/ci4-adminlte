@@ -39,7 +39,7 @@ $routes->get('/', 'Home::index');
 
 $routes->get("list-products", "DataController::listProducts");
 $routes->get("list-users", "DataController::listUsers");
-
+$routes->get("users", "UserController::index");
 /*
  * --------------------------------------------------------------------
  * Additional Routing
