@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Default Layout</title>
-    <?= link_tag('assets/css/adminlte.css') ?>
+    <?= link_tag('assets/adminlte/css/adminlte.css') ?>
 </head>
 <body>
     <?= $this->renderSection('content') ?>
