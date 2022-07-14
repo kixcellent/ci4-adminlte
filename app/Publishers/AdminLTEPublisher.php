@@ -58,7 +58,7 @@ class AdminLTEPublisher extends Publisher
              ->addPath('/')
 
             // Indicate we only want the minimized versions
-            ->retainPattern('*.min.*')
+            // ->retainPattern('*.min.*')
 
             // Merge-and-replace to retain the original directory structure
             ->merge(true);

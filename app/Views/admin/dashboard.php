@@ -1,5 +1,6 @@
-<?= $this->extend('layout/default') ?>
+<?= $this->extend('layout/admin') ?>
 
 <?= $this->section('content') ?>
-    <h1>Welcome Back!</h1>
+    <?= $this->include('admin/_inc/content-header') ?>
+    <?= $this->include('admin/_inc/content') ?>
 <?= $this->endSection() ?>
